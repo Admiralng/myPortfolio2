@@ -1,0 +1,291 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap");
+
+:root {
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 900;
+  --dulltext-color: #d3d3d3;
+  --text-color: white;
+  --secoundary-color: #bf0000;
+  --background-color: #000000;
+  --background-color2: #202020;
+  --line-height: 1.7rem;
+  --transition: 0.5s ease-in;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  transition: var(--transition);
+  scroll-behavior: smooth;
+}
+
+#nav {
+  display: inline-block;
+}
+
+a {
+  transition: color 0.5s ease-in-out;
+  text-decoration: none;
+  color: var(--secoundary-color);
+  margin: 5px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+.logo {
+  font-family: "Pacifico", sans-serif;
+  font-size: 25px;
+  color: var(--secoundary-color);
+}
+
+.heading {
+  margin-right: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+.headpage {
+  background-color: var(--background-color);
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.intro {
+  background-color: var(--background-color2);
+  padding: 20%;
+}
+.h_intro {
+  color: var(--dulltext-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.h_intro > h1 {
+  color: var(--text-color);
+  font-size: 50px;
+}
+.h_intro > h2 {
+  font-family: "Baskervville", sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  .h_intro > h2 {
+    font-size: 25px;
+  }
+  .h_intro > h1 {
+    font-size: 35px;
+  }
+}
+
+.about_me {
+  background-color: var(--background-color);
+  color: var(--dulltext-color);
+  padding: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.about_me > div > ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  font-family: "Baskervville", sans-serif;
+  font-size: 15px;
+}
+.about_me > div > h3 {
+  color: var(--secoundary-color);
+  font-family: "Baskervville", sans-serif;
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+.about_me > div > h1 {
+  color: var(--dulltext-color);
+  letter-spacing: 5px;
+  font-family: "Raleway", sans-serif;
+}
+.about_me > div > h2 {
+  color: var(--dulltext-color);
+  letter-spacing: 5px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+.about_me > div > img {
+  width: 450px;
+  padding: 15px;
+}
+.about_me > div > ul > li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about_me {
+    display: flex;
+    flex-direction: column;
+  }
+  .about_me > div > img {
+    width: 260px;
+  }
+}
+
+.projects_sec {
+  padding: 15%;
+  height: 100%;
+  background-color: #0a192f;
+}
+.projects_sec > h1 {
+  color: var(--secoundary-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+button {
+  background-color: var(--secoundary-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Baskervville", sans-serif;
+  padding: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects_sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+}
+
+.hero-image1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://res.cloudinary.com/admiral-ng/image/upload/v1670122007/landingP_pic_kp2mjq.jpg");
+  height: 220px;
+  margin-bottom: 40px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+}
+/* Place text in the middle of the image */
+.hero-text1 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color);
+  letter-spacing: 5px;
+  font-family: "Raleway", sans-serif;
+}
+
+.hero-image2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://res.cloudinary.com/admiral-ng/image/upload/v1670122047/flex_lay_pic_oi7aks.jpg");
+  height: 220px;
+  margin-bottom: 40px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text2 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color);
+  letter-spacing: 5px;
+  font-family: "Raleway", sans-serif;
+}
+
+.hero-image3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://res.cloudinary.com/admiral-ng/image/upload/v1670122034/js_calc_ighirg.jpg");
+  height: 220px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+/* Place text in the middle of the image */
+.hero-text3 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color);
+  letter-spacing: 5px;
+  font-family: "Raleway", sans-serif;
+}
+
+.contact {
+  height: auto;
+  background-color: #112240;
+  padding: 15%;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.contact > div > h1 {
+  color: var(--dulltext-color);
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+
+.contact > div > h3 {
+  font-family: "Baskervville", sans-serif;
+  color: var(--secoundary-color);
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.contact > div > li {
+  list-style-type: none;
+  padding: 10px;
+}
+.contact > .footertag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0% 20% 0% 20%;
+}
