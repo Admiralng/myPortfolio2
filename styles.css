@@ -75,7 +75,7 @@ nav {
 
 .intro {
   background-color: var(--background-color2);
-  padding: 15% 15% 10%;
+  padding: 10% 15% 10%;
 }
 @media only screen and (max-width: 768px) {
   .intro {
@@ -86,14 +86,23 @@ nav {
 .h_intro {
   color: var(--dulltext-color);
   font-family: "Raleway", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 5px;
 }
 
 .h_intro > h1 {
   color: var(--text-color);
-  font-size: 50px;
+  font-size: 40px;
 }
+@media only screen and (max-width: 768px) {
+  .intro > .h_intro > h1 {
+    font-size: 22px;
+  }
+  .intro > .h_intro > h2 {
+    font-size: 15px;
+  }
+}
+
 .h_intro > h2 {
   font-family: "Baskervville", sans-serif;
 }
@@ -415,9 +424,9 @@ button:hover {
   list-style-type: none;
   padding: 10px;
 }
-.contact > .footertag {
+.footertag {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0% 20% 0% 20%;
+  margin: 5px 10% 5px 10%;
 }
