@@ -9,18 +9,41 @@
   </head>
 
   <body>
-    <section class="headpage">
-      <div id="navbar" class="heading">
-					<a href="index.html" target="_blank" class="logo">Admiral_Ng</a>
-					<nav id="nav">
-						  <a href="#about">
-                About</a>
-						  <a href="#projects" >
-                Work</a>
-						  <a href="#contactme" >
-                Contact</a>
-					</nav>        
-      </div>
+    <section class="headPage">
+      <div class="naviBar">
+            <div id="myLogo" class="logoClass">
+              <div class="logo">
+					      <a href="index.html" target="_blank" class="logo">Admiral_Ng</a>
+              </div>
+            </div>
+            <div id="menuu" class="textSm">
+                <ul class="textSmm">
+                  <li class="hamBurg2" id="burger2" onclick="myFun()">
+                    <img class="burger1" id="burger2" src="/Favicons/menu-svgrepo-com.svg">
+                  </li>
+                  <li class="pageLink" id="navLink1" >
+                    <a href="#about" class="navArr">
+                      <h2>About</h2>
+                      <img class="imgBurg" src="/Favicons/about-faq-help-question-svgrepo-com.svg">
+                    </a>
+                  </li>
+                  <li class="pageLink">
+                    <a href="#projects" class="navArr">
+                      <h2>Projects</h2>
+                      <img class="imgBurg" src="/Favicons/meta-svgrepo-com.svg">
+                    </a>
+                  </li>   
+                  <li class="pageLink">
+                    <a href="#contactme" class="navArr">
+                      <h2>Contact</h2>
+                      <img class="imgBurg" src="/Favicons/contact-new-svgrepo-com.svg">
+                    </a>
+                  </li>
+                </ul>
+            </div>  
+        </div>
+      </div> <!--end navbar-->
+   
     </section>
     
     <section class="intro" id="welcome-section">
@@ -29,7 +52,7 @@
         <h2>Oluwasegun Nicholas</h2>
         <h2>A Frontend developer</h2>
         <h1>I am passionate about cutting-edge technologies, pixel-perfect web designs, and intuitive implemented Front-end languages.</h1>
-        <a href="https://docs.google.com/document/d/e/2PACX-1vSFmwLD2iBXiy5jRzKYX7UhjBQ3GusqyvUayIU7PUrFBTzev4owcF7VyoCQCNYswXhKc_PEdBg9yIwS/pub">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSFmwLD2iBXiy5jRzKYX7UhjBQ3GusqyvUayIU7PUrFBTzev4owcF7VyoCQCNYswXhKc_PEdBg9yIwS/pub" class="button2">
           <span></span>
           <span></span>
           <span></span>
@@ -150,5 +173,8 @@
       </div>
       </div>
     </section>
+
+    <script src="script.js"></script>
+
   </body>
 </html>

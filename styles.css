@@ -10,8 +10,10 @@
   --dulltext-color: #d3d3d3;
   --text-color: white;
   --secoundary-color: #bf0000;
-  --background-color: #000000;
+  --primary-black: #000000;
+  --resene-color: #DCD9CD;
   --background-color2: #202020;
+  --background-color4: #bbb2a9;
   --line-height: 1.7rem;
   --transition: 0.5s ease-in;
 }
@@ -25,11 +27,123 @@ body {
   font: inherit;
   transition: var(--transition);
   scroll-behavior: smooth;
+  
 }
 
-#nav {
-  displa: inline-block;
+
+
+.headPage {
+  background-color: var(--resene-color);
+  position: fixed;
+  width: 100%;
+  z-index: 4;
 }
+.logo {
+  font-family: "Pacifico", sans-serif;
+  font-size: 25px;
+  color: var(--secoundary-color);
+  padding-left: 10px;
+  text-decoration: none;
+  
+}
+.naviBar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.hamBurger {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+}
+.textSmm {
+  display: flex;
+  padding-right: 15px;
+}
+.burger1 {
+  width: 55px;
+}
+.pageLink {
+  list-style-type: none;
+  
+}
+.navArr {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  text-decoration: none;
+  padding-right: 20px;
+  color: var(--secoundary-color);
+  font-family: "Baskervville", sans-serif;
+}
+.imgBurg {
+  width: 30px;
+  padding-left: 6px;
+}
+.hamBurg2 {
+  display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .headPage {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+  }
+  .logo {
+    font-family: "Pacifico", sans-serif;
+    font-size: 18px;
+    color: var(--secoundary-color);
+    position: absolute;
+    top: 0px;
+  }
+  .naviBar {
+    display: flex;
+    overflow: hidden;
+    height: auto;
+  }
+  .imgBurg {
+    width: 20px;
+    
+  }
+  .hamHide {
+    display: block;
+    cursor: pointer;
+    padding-right: 15px;
+    position: ;
+  }
+  .textSmm {
+    flex-direction: column;
+    text-align: right;
+  }
+  .navArr > h2 {
+    font-size: 15px;
+    line-height: 5px;
+  }
+  .pageLink {
+    display: non;
+  }
+  .burger1 {
+    width: 40px;
+  }
+  .hamBurg2 {
+    list-style-type: none;
+    display: block;
+    cursor: pointer;
+    position: ;
+  }
+};
+
+
+
+
+
+
 
 a {
   transition: color 0.5s ease-in-out;
@@ -43,35 +157,8 @@ a:hover {
   color: var(--text-color);
 }
 
-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  font-family: "Raleway", sans-serif;
-}
-.logo {
-  font-family: "Pacifico", sans-serif;
-  font-size: 25px;
-  color: var(--secoundary-color);
-}
 
-.heading {
-  margin-right: 5px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 3;
-}
-.headpage {
-  background-color: var(--background-color);
-  position: fixed;
-  top: 0;
-  overflow: hidden;
-  width: 100%;
-  z-index: 4;
-}
+
 
 .intro {
   background-color: var(--background-color2);
@@ -225,6 +312,10 @@ nav {
 /* over ends here */
 
 
+
+
+
+
 @media only screen and (max-width: 768px) {
   .h_intro > h2 {
     font-size: 25px;
@@ -235,8 +326,8 @@ nav {
 }
 
 .about_me {
-  background-color: var(--background-color);
-  color: var(--dulltext-color);
+  background-color: var(--resene-color);
+  color: var(--primary-black);
   padding: 15%;
   display: flex;
   justify-content: space-between;
@@ -255,9 +346,15 @@ nav {
   font-size: 25px;
 }
 .about_me > div > h1 {
-  color: var(--dulltext-color);
+  color: var(--primary-black);
   letter-spacing: 5px;
   font-family: "Raleway", sans-serif;
+}
+.about_me > div > ul {
+  color: var(--primary-black);
+  letter-spacing: 5px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
 }
 .about_me > div > h2 {
   color: var(--dulltext-color);
@@ -288,12 +385,18 @@ nav {
     border-radius: 0;
     font-weight: bolder;
   }
+  .about_me > div > ul {
+    color: var(--primary-black);
+    letter-spacing: 3px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+  }
 }
 
 .projects_sec {
   padding: 15%;
   height: 100%;
-  background-color: #0a192f;
+  background-color: var(--background-color4);
 }
 .projects_sec > h1 {
   color: var(--secoundary-color);
@@ -398,7 +501,7 @@ button:hover {
 
 .contact {
   height: auto;
-  background-color: #112240;
+  background-color: var(--background-color2);
   padding: 15%;
   overflow: hidden;
   padding-bottom: 10px;
