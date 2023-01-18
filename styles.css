@@ -12,8 +12,9 @@
   --secoundary-color: #bf0000;
   --primary-black: #000000;
   --resene-color: #f6f8fc;
-  --background-color2: #202020;
-  --background-color4: #bbb2a9;
+  --background-color1: #f2f2f2;
+  --background-color2: #ffffff;
+  --background-color3: #202020;
   --line-height: 1.7rem;
   --transition: 0.5s ease-in;
 }
@@ -33,7 +34,7 @@ body {
 
 
 .headPage {
-  background-color: var(--resene-color);
+  background-color: var(--background-color1);
   position: fixed;
   width: 100%;
   z-index: 4;
@@ -163,7 +164,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--background-color3);
 }
 
 
@@ -180,14 +181,14 @@ a:hover {
 }
 
 .h_intro {
-  color: var(--dulltext-color);
+  color: var(--primary-black);
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   letter-spacing: 5px;
 }
 
 .h_intro > h1 {
-  color: var(--text-color);
+  color: var(--primary-black);
   font-size: 40px;
 }
 @media only screen and (max-width: 768px) {
@@ -213,6 +214,7 @@ a:hover {
   padding: 20px 30px;
   border-radius: 4px;
   color: var(--secoundary-color);
+  background-color: var(--background-color1);
   text-decoration: none;
   overflow: hidden;
   letter-spacing: 1.5px;
@@ -335,7 +337,7 @@ a:hover {
 }
 
 .about_me {
-  background-color: var(--resene-color);
+  background-color: var(--background-color1);
   color: var(--primary-black);
   padding: 15%;
   display: flex;
@@ -366,7 +368,7 @@ a:hover {
   font-weight: bolder;
 }
 .about_me > div > h2 {
-  color: var(--dulltext-color);
+  color: var(--primary-black);
   letter-spacing: 5px;
   font-family: "Raleway", sans-serif;
   text-align: center;
@@ -405,7 +407,7 @@ a:hover {
 .projects_sec {
   padding: 15%;
   height: 100%;
-  background-color: var(--background-color4);
+  background-color: var(--background-color2);
 }
 .projects_sec > h1 {
   color: var(--secoundary-color);
@@ -510,7 +512,7 @@ button:hover {
 
 .contact {
   height: auto;
-  background-color: var(--background-color2);
+  background-color: var(--background-color3);
   padding: 15%;
   overflow: hidden;
   padding-bottom: 10px;
