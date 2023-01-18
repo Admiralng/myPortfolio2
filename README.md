@@ -5,7 +5,7 @@ https://admiralng.github.io/landPage-fcc/
 Improvements from the first portfolio.
 
 # 🛠 Skills
-HTML, CSS....
+JavaScript, HTML, CSS....
 
 # Author
 https://github.com/Admiralng
