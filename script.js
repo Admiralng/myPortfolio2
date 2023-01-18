@@ -15,5 +15,17 @@ function myFun() {
     custDiv.style.display = "block";
   } else {
     custDiv.style.display = "none";
+  };
+  const custDiv2 = document.getElementById("navLink2");
+  if (custDiv2.style.display === "none") {
+    custDiv2.style.display = "block";
+  } else {
+    custDiv2.style.display = "none";
   }
+  const custDiv3 = document.getElementById("navLink3");
+  if (custDiv3.style.display === "none") {
+    custDiv3.style.display = "block";
+  } else {
+    custDiv3.style.display = "none";
+  }  
 };

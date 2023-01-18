@@ -11,7 +11,7 @@
   --text-color: white;
   --secoundary-color: #bf0000;
   --primary-black: #000000;
-  --resene-color: #DCD9CD;
+  --resene-color: #f6f8fc;
   --background-color2: #202020;
   --background-color4: #bbb2a9;
   --line-height: 1.7rem;
@@ -94,6 +94,7 @@ body {
     position: fixed;
     z-index: 4;
     width: 100%;
+    height: auto;
   }
   .logo {
     font-family: "Pacifico", sans-serif;
@@ -101,6 +102,7 @@ body {
     color: var(--secoundary-color);
     position: absolute;
     top: 0px;
+    
   }
   .naviBar {
     display: flex;
@@ -126,7 +128,11 @@ body {
     line-height: 5px;
   }
   .pageLink {
-    display: non;
+    display: none; 
+    padding-to: 20px;
+  }
+  .pageLink:nth-child(1) {
+    padding-top: 55px;
   }
   .burger1 {
     width: 40px;
@@ -135,7 +141,9 @@ body {
     list-style-type: none;
     display: block;
     cursor: pointer;
-    position: ;
+    position: absolute;
+    top: 0px;
+    right: 15px;
   }
 };
 
