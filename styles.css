@@ -28,7 +28,7 @@ body {
   font: inherit;
   transition: var(--transition);
   scroll-behavior: smooth;
-  
+  box-sizing: border-box;
 }
 
 
@@ -339,33 +339,37 @@ a:hover {
 .about_me {
   background-color: var(--background-color1);
   color: var(--primary-black);
-  padding: 15%;
+  padding: 10%;
   display: flex;
   justify-content: space-between;
+  justify-items: cente;
 }
 .about_me > div > ul {
-  columns: 2;
+  text-align: center;
   -webkit-columns: 2;
   -moz-columns: 2;
-  font-family: "Baskervville", sans-serif;
+  color: var(--primary-black);
+  letter-spacing: 5px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  padding: 0;
+}
+.about_me > div > ul > li {
   font-size: 15px;
+  list-style-type: none;
+  left: 0px;
 }
 .about_me > div > h3 {
   color: var(--secoundary-color);
   font-family: "Baskervville", sans-serif;
   letter-spacing: 5px;
-  font-size: 25px;
+  font-size: 20px;
+  text-align: center;
 }
 .about_me > div > h1 {
   color: var(--primary-black);
   letter-spacing: 5px;
   font-family: "Raleway", sans-serif;
-}
-.about_me > div > ul {
-  color: var(--primary-black);
-  letter-spacing: 5px;
-  font-family: "Raleway", sans-serif;
-  font-weight: bolder;
 }
 .about_me > div > h2 {
   color: var(--primary-black);
@@ -379,7 +383,7 @@ a:hover {
 }
 .about_me > div > ul > li {
   list-style-type: none;
-  padding: 15px;
+  padding-top: 25px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -388,7 +392,7 @@ a:hover {
     flex-direction: column;
   }
   .about_me > div > img {
-    width: 260px;
+    width: 270px;
   }
   .button2 {
     font-size: small;
