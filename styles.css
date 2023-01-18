@@ -392,7 +392,12 @@ a:hover {
     flex-direction: column;
   }
   .about_me > div > img {
-    width: 270px;
+    width: 100%;
+    background-position: center;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    padding: 0;
   }
   .button2 {
     font-size: small;
