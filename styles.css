@@ -129,10 +129,11 @@ body {
   }
   .pageLink {
     display: none; 
-    padding-to: 20px;
+    padding-lef: px;
   }
-  .pageLink:nth-child(1) {
-    padding-top: 55px;
+  .pageLink:nth-child(3n-1) {
+    padding-top: 45px;
+    padding-left: 11px;
   }
   .burger1 {
     width: 40px;
